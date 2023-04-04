@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+img{
+    max-width: 100%;
+}
+.container, .device_width{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+/* sticky-header code*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+
+}
+/* sticky-header code */
+/* toggle */
+.toggle{
+    position: relative;
+    background: #37266C;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.toggle span{
+    position: absolute;
+    border-radius: 4px;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+}
+.toggle span:nth-child(1){
+    width: 20px;
+    transform: translateY(-8px);
+    right: 8px;
+}
+.toggle span:nth-child(2){
+    width: 20px;
+    transform: translateY(8px);
+    left: 8px;
+}
+/* toggle */
+.header i{
+    font-size: 1.7rem;
+}
+.header img{
+    width: 20%;
+    object-fit: cover;
+}
+.features_box{
+    padding-top: 70px;
+}
+.features{
+    padding: 0 20px;
+    height: 8rem;
+    width: 100%;
+}
+.features .money_box{
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #fff;
+    background-color: #6361A2;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.features .features_menu{
+    width: 100%;
+    height: 50%;
+    background-color: #807DB2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 0;
+}
+.money_box .balance,
+.money_box .add_money_btn{
+    padding: 12px 15px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    font-size: .7rem;
+    cursor: pointer;
+}
+.features_menu .features_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .7rem;
+    color: #fff;
+    cursor: pointer;
+}
+.features_item i{
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+}
+.features_item:nth-child(1) i{
+    background-color: #2BB3A7;
+}
+.features_item:nth-child(2) i{
+    background-color: #65BDE1;
+}
+.features_item:nth-child(3) i{
+    background-color: #F6DD45;
+    color: #000;
+}
+.features_item:nth-child(4) i{
+    background-color: #C66D6A;
+    color: rgb(226, 226, 226);
+}
+.utility_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.menu_item{
+    font-size: .8rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_item i{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    line-height: 40px;
+    text-align: center;
+}
+.menu_item:nth-child(1) i{
+    background-color: #FEF3E8;
+    color: #dbad40;
+}
+.menu_item:nth-child(2) i{
+    background-color: #EEEDFD;
+    color: #657edb;
+}
+.menu_item:nth-child(3) i{
+    background-color: #FCE6E8;
+    color: #f59fa3;
+}
+.menu_item:nth-child(4) i{
+    background-color: #E5F2EE;
+    color: #73dbb9;
+}
+.promotion h1{
+    font-size: .9rem;
+    font-weight: 600;
+}
+.report_box .report_info{
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+    margin: 20px 0;
+}
+.report_agent{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 10px;
+}
+.report_agent .agent{
+    width: 33.3%;
+    margin-bottom: 20px;
+}
+.report_agent .agent h1{
+    font-size: .6rem;
+    font-weight: 600;
+}
+.report_agent .agent span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: #37266c;
+}
+/* menu */
+.main_menu{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background-color: #51AA8C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_menu a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    font-size: .8rem;
+}
+.main_menu a i{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+/* menu end */
+
+/* Add money */
+.device_width .box{
+    background-color: #EFEFEF;
+    height: 100%;
+}
+.add_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.24);
+}
+.add_header h1{
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 0 10px;
+}
+.add_header i{
+    color: #000000;
+    cursor: pointer;
+    font-size: 25px;
+}
+.add_header .fa-bell{
+    transform:rotate(20deg);
+}
+.add_form{
+    padding: 40px;
+}
+.add_form img{
+    display: block;
+    margin-inline: auto;
+    height: 60px;
+    object-fit: contain;
+}
+.add_form input, .add_form label{
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.add_form input{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.next_btn{
+    background-color: #51AA8C;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Add money end*/
+/* commission css */
+.commission{
+    background-color: #fff;
+    margin-inline: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    
+    box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.3);
+}
+.commission .date_area{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: #EEEDFD;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 30px;
+}
+.commission .date_area .date{
+    /* text-align: right; */
+    display: block;
+    font-size: .8rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+.commission_balance{
+    margin-inline: auto;
+    padding: 20px;
+    background-color: #ebe7e7;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    outline: 5px solid #37266C;
+    outline-offset: -10px;
+}
+.commission_balance h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+}
+.commission span{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #37266C;
+    text-decoration: underline;
+}
+.commission .paid{
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 30px;
+    padding: 10px 0;
+    background-color: #37266C;
+    border-radius: 0 0 20px 20px;
+    border: none;
+    text-decoration: none;
+}
+/* commission css end */
+/* account css */
+.account_area{
+    padding: 10px 20px;
+    margin-top: 70px;
+}
+.account_area img{
+    width: 20%;
+    display: block;
+    margin-inline: auto;
+}
+.account_info{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    background-color: #f1e8fe;
+    border-radius: 5px;
+}
+.account_info li{
+    width: 50%;
+    margin-inline: 40px;
+}
+.account_info li h1{
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.account_info li span{
+    display: block;
+    padding: 5px 0;
+    font-size: .8rem;
+    font-weight: 600;
+}
+/* account css end */

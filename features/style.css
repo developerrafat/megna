@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+img{
+    max-width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header{
+    padding: 20px 15px;
+    background: linear-gradient(to right, #48A76F, #2E9659);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+.left{
+    display: flex;
+    align-items: center;
+}
+.header a{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.header h1{
+    font-size: 1.3rem;
+    margin-left: 20px;
+    color: #fff;
+    font-weight: 400;
+}
+.block{
+    padding-top: 70px;
+}
+/* agent list */
+.agent_box{
+    padding: 20px;
+    width: 100%;
+}
+.agent_box tr{
+    margin-inline: 30px;
+    box-shadow: 0px 2px 15px #00000018;
+    text-align: center;
+}
+.agent_box tr th{
+    background-color: #48A76F;
+    padding: 10px 0;
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fff;
+}
+.agent_box tr td{
+    margin: 0;
+    padding: 10px 0;
+    font-size: .8rem;
+    color: #2E9659;
+    font-weight: 500;
+}
+/* agent list end */
+/* today report */
+.report_box{
+    padding: 20px;
+    width: 100%;
+}
+.report_box tr{
+    margin-inline: 30px;
+    box-shadow: 0px 2px 15px #00000018;
+    text-align: center;
+}
+.report_box tr th{
+    background-color: #6c767e;
+    padding: 10px 0;
+    font-size: .7rem;
+    font-weight: 500;
+    color: #fff;
+}
+.report_box tr th.active{
+    background: #3b4146;
+}
+.report_box tr td{
+    margin: 0;
+    padding: 5px 0;
+    font-size: .8rem;
+    color: #2E9659;
+    font-weight: 500;
+}
+.report_box tr .action_btn a{
+    display: block;
+    padding: 5px;
+    background-color: #6c767e;
+    margin: 5px;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 400;
+    border-radius: 5px;
+}
+/* today report end */
+/* menu */
+.main_menu{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    background-color: #51AA8C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_menu a{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 300;
+    font-size: .8rem;
+}
+.main_menu a i{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+/* menu end */
+/* transaction history */
+.find_txn{
+    margin: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+.txn_type{
+    display: flex;
+}
+.txn_type label{
+    width: 50%;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.txn_type label:nth-child(2){
+    padding-left: 5px;
+}
+.txn_type input, .txn_type select{
+    width: 100%;
+    background-color: #EDEEF3;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-size: .7rem;
+}
+.find_txn > .search_box{
+    margin: 20px 0;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+.find_txn > .search_box > input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+    font-size: .7rem;
+    color: #000;
+    border: none;
+    outline: none;
+    background-color: #EDEEF3;
+}
+.find_txn > .search_box > i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: .9rem;
+    z-index: 10;
+}
+.find_txn > span{
+    font-size: .8rem;
+}
+.find_txn > select{
+    display: block;
+    width: 100%;
+    background-color: #EDEEF3;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    font-size: .7rem;
+}
+.find_txn > select label{
+    width: 100%;
+    display: block;
+    font-size: .7rem;
+}
+.find_txn > select span{
+    display: block;
+    width: 100%;
+}
+.txn_btn{
+    display: block;
+    width: 50%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px auto 0;
+    font-size: .7rem;
+    font-weight: 500;
+    background-color: #036B46;
+    color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.txn_history_box{
+    width: 100%;
+    padding: 20px 20px;
+}
+.txn_history{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.txn_history .download_btn{
+    padding: 10px;
+    display: block;
+    background-color: #3b4146;
+    color: #fff;
+    font-size: .8rem;
+    width: 8rem;
+    text-align: center;
+    margin-inline: auto;
+    border-radius: 5px;
+}
+.txn_list{
+    width: 100%;
+    margin-top: 15px;
+}
+.txn_list .list_item{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.txn_list .list_item:first-child{
+    background-color: #E9E6FB;
+    border: none;
+}
+.txn_list .list_item:last-child{
+    border: none;
+}
+.txn_list .list_item h4{
+    width: 33.33%;
+    font-size: .8rem;
+    padding: 10px 5px;
+}
+.txn_list .list_item span{
+    width: 33.33%;
+    display: block;
+    font-size: .8rem;
+    word-wrap: break-word;
+    padding: 10px 5px;
+}
+/* transaction history end */
